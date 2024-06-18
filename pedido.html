@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Restaurante</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+
+
+
+
+        <div class="formulario";>
+
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/comida.png" class="card-img-top" alt="Descrição da foto">
+                </div>
+
+            <fieldset>
+                <legend>Itens do Pedido:</legend>
+                <h5>Prato Principal:</h5>
+                <label><input type="checkbox" name="prato_principal" value="Pizza Margherita"> Costelinha barbecue com
+                    gergelim</label><br>
+                <h3>Acompanhamentos</h3>
+                <label><input type="checkbox" name="prato_principal" value="Hamburguer Duplo"> Arroz</label><br>
+                <label><input type="checkbox" name="prato_principal" value="Spaghetti à Bolonhesa"> Salada</label><br>
+                <label><input type="checkbox" name="prato_principal" value="Salada Caesar"> Molho do chef</label>
+
+                <h5>Bebidas:</h5>
+                <label><input type="checkbox" name="bebida" value="Refrigerante"> Vinho</label><br>
+                <label><input type="checkbox" name="bebida" value="Suco Natural"> Suco Natural</label><br>
+                <label><input type="checkbox" name="bebida" value="Água Mineral"> Água Mineral</label>
+
+                <h5>Sobremesas:</h5>
+                <label><input type="checkbox" name="sobremesa" value="Cheesecake"> Cheesecake </label><br>
+                <label><input type="checkbox" name="sobremesa" value="Brownie"> Brownie</label><br>
+                <label><input type="checkbox" name="sobremesa" value="Sorvete de Chocolate"> Sorvete Artesanal da
+                    Casa</label>
+            </fieldset>
+        </form>
+
+            <form action="pedido.php" method="post">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="endereco">Endereço de Entrega:</label>
+                    <textarea id="endereco" name="endereco" required></textarea>
+
+                    <label for="telefone">Telefone para Contato:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </form>
+
+                <label for="observacoes">Observações Adicionais:</label>
+                <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao">Cartão de Crédito/Débito</option>
+                    <option value="online">Pagamento Online</option>
+                    <option value="online">Pix</option>
+                </select>
+
+                <input type="submit" class="Confirmar" onclick="Confiormar();" value="Confirmar" />
+
+
+    </main>
+    <footer>
+        Desenvolvido por Denise Ltda
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.
+js" integrity="sha384-
+OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
